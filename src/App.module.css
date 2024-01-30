@@ -1,0 +1,94 @@
+.App {
+}
+
+.header {
+    background-color: #2196F3;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 62px;
+}
+
+.itemMenu {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 23px;
+    border: none;
+    background-color: #2196F3;
+
+}
+
+.itemMenuSelected {
+    background-color: #1E88E5;
+    color: white;
+}
+
+.itemMenuSelected,
+.itemMenu {
+    cursor: pointer;
+}
+
+
+.content {
+    margin-top: 52px;
+    padding: 0 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerPhoto:hover .likeCat {
+    opacity: 1;
+}
+
+.containerPhoto {
+    transition: ease-in-out 0.3s;
+}
+
+.photoCat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.photo {
+    width: 225px;
+    height: 225px;
+    position: relative;
+}
+
+.containerPhoto:hover {
+    transform: scale(1.2);
+}
+
+.likeCat {
+    position: absolute;
+    transform: translate(-58px, 165px);
+    height: 48px;
+    width: 48px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+
+}
+
+.likeCat:hover {
+    cursor: pointer;
+    background-image: url("./image/heart.svg");
+}
+
+.loadingCats {
+    margin-top: 48px;
+    margin-bottom: 31px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .itemMenu {
+        padding: 16px 23px;
+    }
+}
